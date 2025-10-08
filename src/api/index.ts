@@ -44,3 +44,12 @@ export const deleteProducts = async (id: string): Promise<void> => {
     console.log("Failed to delete product, " + error);
   }
 };
+
+// Add New Product
+export const addNewProduct = async (product: Product): Promise<void> => {
+  try {
+    await axios.post(`${API_URI}/products`, product);
+  } catch (e) {
+    console.log("Failed to add product, " + e);
+  }
+};

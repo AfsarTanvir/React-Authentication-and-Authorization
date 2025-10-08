@@ -4,7 +4,7 @@ import ProtectedRoutes from '../../components/ProtectedRoutes';
 
 export const Route = createFileRoute('/_protected/')({
   component: () => {
-    <ProtectedRoutes allowGuest>
+    <ProtectedRoutes allowGuest={true}>
       <RouteComponent />
     </ProtectedRoutes>;
   }

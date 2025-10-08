@@ -1,18 +1,27 @@
 {
   "users": [
     {
-        "id": "user 1",
-        "userName": "AfsarTanvir",
-        "password": "Admin@123",
-        "role": "admin",
-        "permissions": ["view_dashboard", "view_products", "edit_product", "delete_product"]
+      "id": "user 1",
+      "userName": "AfsarTanvir",
+      "password": "Admin@123",
+      "role": "admin",
+      "permissions": [
+        "view_dashboard",
+        "view_products",
+        "edit_product",
+        "delete_product"
+      ]
     },
     {
       "id": "user 2",
       "userName": "Numin",
       "password": "Manager@123",
       "role": "manager",
-      "permissions": ["view_dashboard", "view_products", "edit_product"]
+      "permissions": [
+        "view_dashboard",
+        "view_products",
+        "edit_product"
+      ]
     },
     {
       "id": "user 3",
@@ -70,6 +79,11 @@
       "id": "product 7",
       "name": "Iphone 17",
       "price": 1599
+    },
+    {
+      "id": "product 8",
+      "name": "IPhone 18",
+      "price": "1999"
     }
   ]
 }

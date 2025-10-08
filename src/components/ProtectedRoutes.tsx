@@ -1,4 +1,4 @@
-import React from 'react'
+import { type JSX } from 'react'
 import { useAuth } from '../context/AuthContext';
 import { Navigate } from "@tanstack/react-router";
 
@@ -7,7 +7,7 @@ function ProtectedRoutes({
   permissions,
   allowGuest = false,
 }: {
-  children: React.ReactNode;
+  children: JSX.Element;
   permissions?: string[];
   allowGuest?: boolean;
 }) {
@@ -28,7 +28,7 @@ function ProtectedRoutes({
     permissions.every((p) => {
       console.log(hasPermission(p), p);
       return hasPermission(p);
-    })
+    });
     return <Navigate to="/unauthorized" />;
   }
 
