@@ -53,7 +53,7 @@
     {
       "id": "product 2",
       "name": "Iphone 12",
-      "price": 999
+      "price": 1299
     },
     {
       "id": "product 3",
@@ -84,6 +84,26 @@
       "id": "product 8",
       "name": "IPhone 18",
       "price": "1999"
+    },
+    {
+      "id": "product 9",
+      "name": "Iphone 19",
+      "price": 2199
+    },
+    {
+      "id": "product 11",
+      "name": "Samsung s21",
+      "price": "1099"
+    },
+    {
+      "id": "product 12",
+      "name": "Samsung s22",
+      "price": "1599"
+    },
+    {
+      "id": "product 13",
+      "name": "Samsung s23",
+      "price": "1899"
     }
   ]
 }

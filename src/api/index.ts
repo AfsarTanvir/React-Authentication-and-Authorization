@@ -53,3 +53,27 @@ export const addNewProduct = async (product: Product): Promise<void> => {
     console.log("Failed to add product, " + e);
   }
 };
+
+// Product Info
+export const productInfo = async (id: string): Promise<Product | null> => {
+  try {
+    const response = await axios.get<Product[]>(`${API_URI}/products`, {
+      params: { id },
+    });
+    console.log(response.data[0]);
+    return response.data[0] || null;
+  }catch(error){
+    console.log("Faild to fatch " + id + " from database. " + error);
+    return null;
+  }
+}
+
+
+// Update Product
+export const updateProduct = async (product: Product): Promise<void> => {
+  try {
+    await axios.put(`${API_URI}/products/${product.id}`, product);
+  } catch (e) {
+    console.log("Failed to Update product, " + e);
+  }
+};
